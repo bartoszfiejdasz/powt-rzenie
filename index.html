@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- tutaj mozna dodac css, ale jest to niewygodne bo zwieksza rozmiar  -->
     <style>
-    /* tutaj mozna dodac css, ale jest to niewygodne bo zwieksza rozmiar */
+        /* dotyczy wszystkich elementow na stronie, nadpisujemy wszystko, aby nie bylo jakis domyslnych wartosci przegladarki */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* dotyczy tylko dzieci body */
+        body>div {
+            height: 200px;
+            width: 300px;
+            background-color: #99FF66;
+            margin: 20px;
+            /* margines diva */
+            padding: 20px;
+            /* margines wewnątrz diva */
+            border: 2px solid green;
+            /* obramowanie 2px linia kolor zielony */
+            box-sizing: border-box;
+            /* padding nie ma wplywu na wielkosc diva */
+
+        }
+
+        div>div {
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 10px;
+            /* zaokraglenie bokow */
+
+        }
     </style>
 </head>
+
 <body>
     <!-- najwazniejsze tagi teksowe -->
-    <h1></h1>    <!-- musi być jeden na stronie, wazny element pozycjonujacy-->
-    <h2></h2>   
-    <h3></h3>
-    <h4></h4>
+    <h1>element1</h1> <!-- musi być jeden na stronie, wazny element pozycjonujacy-->
+    <h2>element2</h2>
+    <h3>element3</h3>
+    <h4>element4</h4>
 
-    <p></p> <!--akapit-->
+    <p></p>
+    <!--akapit-->
 
     <pre> <!-- tekst wyglada tak jak napiszemy-->
         <b>to</b> <!--wizualne pogrobienie tekstu-->
         <i>jest moj</i> <!--wizualne pochylenie tekstu-->
         tekst
     </pre>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto qui nulla, enim quisquam odio placeat sapiente delectus! Aut, asperiores, veniam numquam officia quasi explicabo minima nam in laudantium labore esse?</p>
-    <p><strong>Lorem ipsum dolor </strong> <!--pogrubia i ma dodatkowo wzmocnione znaczenia-->
-        sit amet consectetur adipisicing elit. Corporis, provident! Eos ex tempore repellendus sapiente? Nobis tenetur harum voluptas aut? Dicta dolor nemo ratione quos dolorum facere magnam quod ut.</p>
-<ul> <!--nienumerowana lista-->
-    <li>element1</li>
-    <li>element2</li>
-    <li>element3</li>
-</ul> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto qui nulla, enim quisquam odio placeat sapiente
+        delectus! Aut, asperiores, veniam numquam officia quasi explicabo minima nam in laudantium labore esse?</p>
+    <p><strong>Lorem ipsum dolor </strong>
+        <!--pogrubia i ma dodatkowo wzmocnione znaczenia-->
+        sit amet consectetur adipisicing elit. Corporis, provident! Eos ex tempore repellendus sapiente? Nobis tenetur
+        harum voluptas aut? Dicta dolor nemo ratione quos dolorum facere magnam quod ut.</p>
+    <ul>
+        <!--nienumerowana lista-->
+        <li>element1</li>
+        <li>element2</li>
+        <li>element3</li>
+    </ul>
 
-<ol> <!--numerowana lista-->
-    <li>element1</li>
-    <li>element2</li>
-    <li>element3</li>
-</ol>
-<!-- tag q cytat -->
-<p>Adam Mickiewicz powiedzial: <q>litwo ojczyzno moja</q></p>
-<!-- cytat blokowy blockquote parametr cite >to skad pochodzi -->
-<p>slowacki powiedzial:</p>
-<blockquote cite="www.onet.pl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, asperiores obcaecati id dolores dicta adipisci dolor iure iste. Nemo nisi repellat reprehenderit cum explicabo dolor doloribus dolorum harum odit incidunt?</blockquote>
+    <ol>
+        <!--numerowana lista-->
+        <li>element1</li>
+        <li>element2</li>
+        <li>element3</li>
+    </ol>
+    <!-- tag q cytat -->
+    <p>Adam Mickiewicz powiedzial: <q>litwo ojczyzno moja</q></p>
+    <!-- cytat blokowy blockquote parametr cite >to skad pochodzi -->
+    <p>slowacki powiedzial:</p>
+    <blockquote cite="www.onet.pl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, asperiores
+        obcaecati id dolores dicta adipisci dolor iure iste. Nemo nisi repellat reprehenderit cum explicabo dolor
+        doloribus dolorum harum odit incidunt?</blockquote>
 
 
-<!-- DIVY elementy blokowe -->
+    <!-- DIVY elementy blokowe -->
 
-<div></div>
+    <div>ewqioueqwuqwuiuiequiquieqioueuoi weqiwoeiqwio iqeiowqoe</div>
+    <div>
+        <div></div>
+
+    </div>
 
 
 </body>
+
 </html>
